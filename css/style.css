@@ -232,8 +232,8 @@ header .navbar ul{
 .course .box{
   flex:1 1 30rem;
   border-radius: 2.5rem;
-  border:.1rem solid var(--white);
-  padding:2rem;
+  border:.5rem solid var(--white);
+  padding:5rem;
   position: relative;
 }
 
@@ -256,12 +256,12 @@ header .navbar ul{
 
 .course .box h3{
   color:var(--white);
-  font-size: 2.5rem;
+  font-size: 2.75rem;
 }
 
 .course .box p{
   color:var(--white);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding:.5rem 0;
 }
 
@@ -269,14 +269,14 @@ header .navbar ul{
   display: flex;
   justify-content: space-between;
   border-top: .1rem solid var(--white);
-  margin-top: 1rem;
+  margin-top: 5rem;
   padding:.5rem;
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 
 .course .icons p{
   color:var(--white);
-  font-size: 1.3rem;
+  font-size: 2.5rem;
   margin: .1; /* Set margin to 0 to remove any default margin */
 
 }
@@ -670,8 +670,8 @@ footer .credit span{
   background-color: var(--secondary-color);
 }
 
-#Front, #Mining, #Cyber ,#IOT ,#Mobile ,#Testing {
-display: none;
-}
+
+
+
 
 

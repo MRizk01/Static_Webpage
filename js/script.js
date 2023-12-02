@@ -1,68 +1,97 @@
-// let menu = document.querySelector('#menu');
-// let navbar = document.querySelector('.navbar');
+// // let menu = document.querySelector('#menu');
+// // let navbar = document.querySelector('.navbar');
 
-// menu.onclick = () =>{
-//   menu.classList.toggle('fa-times');
-//   navbar.classList.toggle('active');
+// // menu.onclick = () =>{
+// //   menu.classList.toggle('fa-times');
+// //   navbar.classList.toggle('active');
+// // }
+
+// // window.onscroll = () =>{
+// //   menu.classList.remove('fa-times');
+// //   navbar.classList.remove('active');
+// // }
+
+// // let menu = document.querySelector('#menu');
+// // let navbar = document.querySelector('.navbar');
+// // let frontBox = document.querySelector('#Front');
+// // let miningBox = document.querySelector('#Mining');
+// // let cyberBox = document.querySelector('#Cyber');
+// // let iotBox = document.querySelector('#IOT');
+// // let mobileBox = document.querySelector('#Mobile');
+// // let testingBox = document.querySelector('#Testing');
+
+// // menu.onclick = () => {
+// //   menu.classList.toggle('fa-times');
+// //   navbar.classList.toggle('active');
+// // }
+
+// // window.onscroll = () => {
+// //   menu.classList.remove('fa-times');
+// //   navbar.classList.remove('active');
+// // }
+
+// // Add click event listener for "Front End Development"
+// // let frontEndLink = document.querySelector('#frontEndLink');
+// // frontEndLink.onclick = () => {
+// //   // Show Front End Development box and hide others
+// //   frontBox.style.display = 'none';
+// //   miningBox.style.display = 'float';
+// //   cyberBox.style.display = 'none';
+// //   iotBox.style.display = 'none';
+// //   mobileBox.style.display = 'none';
+// //   testingBox.style.display = 'none';
+// // }
+
+
+
+
+// function myFunction() {
+//     var frontElement = document.getElementById("Front");
+//     var miningElement = document.getElementById("Mining");
+//     var cyberElement = document.getElementById("Cyber");
+//     var iotElement = document.getElementById("IOT");
+//     var mobileElement = document.getElementById("Mobile");
+//     var testingElement = document.getElementById("Testing");
+
+//     if (frontElement && miningElement && cyberElement && iotElement && mobileElement && testingElement) {
+//         frontElement.style.display = "block";
+//         miningElement.style.display = "none";
+//         cyberElement.style.display = "none";
+//         iotElement.style.display = "none";
+//         mobileElement.style.display = "none";
+//         testingElement.style.display = "none";
+//     }
 // }
 
-// window.onscroll = () =>{
-//   menu.classList.remove('fa-times');
-//   navbar.classList.remove('active');
-// }
+// document.addEventListener("DOMContentLoaded", function() {
+//     var frontEndLink = document.getElementById("frontEndLink");
 
-// let menu = document.querySelector('#menu');
-// let navbar = document.querySelector('.navbar');
-// let frontBox = document.querySelector('#Front');
-// let miningBox = document.querySelector('#Mining');
-// let cyberBox = document.querySelector('#Cyber');
-// let iotBox = document.querySelector('#IOT');
-// let mobileBox = document.querySelector('#Mobile');
-// let testingBox = document.querySelector('#Testing');
+//     if (frontEndLink) {
+//         frontEndLink.addEventListener("click", function(event) {
+//             // Prevent the default behavior of the link
+//             event.preventDefault();
 
-// menu.onclick = () => {
-//   menu.classList.toggle('fa-times');
-//   navbar.classList.toggle('active');
-// }
+//             // Set a flag in local storage indicating that the link was clicked
+//             localStorage.setItem("frontEndLinkClicked", "true");
 
-// window.onscroll = () => {
-//   menu.classList.remove('fa-times');
-//   navbar.classList.remove('active');
-// }
+//             // Call the custom function
+//             myFunction();
+//         });
+//     }
 
-// Add click event listener for "Front End Development"
-// let frontEndLink = document.querySelector('#frontEndLink');
-// frontEndLink.onclick = () => {
-//   // Show Front End Development box and hide others
-//   frontBox.style.display = 'none';
-//   miningBox.style.display = 'float';
-//   cyberBox.style.display = 'none';
-//   iotBox.style.display = 'none';
-//   mobileBox.style.display = 'none';
-//   testingBox.style.display = 'none';
-// }
+//     // Check if the flag is set
+//     var isFrontEndLinkClicked = localStorage.getItem("frontEndLinkClicked");
+//     if (isFrontEndLinkClicked === "true") {
+//         // If the flag is set, modify the elements
+//         myFunction();
+
+//         // Clear the flag to prevent modifying elements on subsequent page loads
+//         localStorage.removeItem("frontEndLinkClicked");
+//     }
+// });
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Your code here
-
-    var frontEndLink = document.getElementById("frontEndLink");
-
-    if (frontEndLink) {
-        frontEndLink.addEventListener("click", myFunction);
-    }
-
-    function myFunction() {
-        // Your code to modify the display property here
-        document.getElementById("Front").style.display = "block";
-        document.getElementById("Mining").style.display = "none";
-        document.getElementById("Cyber").style.display = "none";
-        document.getElementById("IOT").style.display = "none";
-        document.getElementById("Mobile").style.display = "none";
-        document.getElementById("Testing").style.display = "none";
-    }
-});
 
 
 

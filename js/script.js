@@ -164,4 +164,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+    const reviewsContainer = document.querySelector('.reviews-container');
+    // Check if the reviews container exists
+    if (reviewsContainer) {
+        // Set the CSS properties for horizontal scrolling
+        reviewsContainer.style.maxHeight = '500px'; // You can adjust this width as needed
+        reviewsContainer.style.display = 'flex';
+        reviewsContainer.style.overflowX = 'auto';
+    }
 });

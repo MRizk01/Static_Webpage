@@ -91,10 +91,77 @@
 // });
 
 
+// // script.js - Main JavaScript file
 
+// // Function to check if an element with a specific ID exists
+// function elementExists(id) {
+//     return document.getElementById(id) !== null;
+// }
 
+// // Main script
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Check if the body has a specific ID
+//     if (elementExists('courses-page')) {
+//         // Code specific to the courses page
+//         console.log('This is the courses page!');
+//         // Add more page-specific code as needed
+//     } else if (elementExists('teacher-page')) {
+//         // Code specific to the teacher page
+//         console.log('This is the teacher page!');
+//         // Add more page-specific code as needed
+//     }
 
+//     // Common code that runs on all pages
+//     console.log('Common code for all pages');
+// });
 
+// script.js - Main JavaScript file
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Select the login form element
+    const loginForm = document.querySelector('.login form');
 
+    // Check if the login form element exists
+    if (loginForm) {
+        // Add a submit event listener to the login form
+        loginForm.addEventListener('submit', function (event) {
+            // Prevent the default form submission
+            event.preventDefault();
 
+            // Show a simple alert when the form is submitted
+            alert('Logged in successfully ');
+        });
+    }
+
+    // Select the navbar element
+    const navbar = document.querySelector('.navbar');
+
+    // Check if the navbar element exists
+    if (navbar) {
+        // Add a mouseover event listener to change color on hover
+        navbar.addEventListener('mouseover', function () {
+            // Create a style element
+            const style = document.createElement('style');
+
+            // Define the CSS rule to change color on hover
+            const cssRule = '.navbar a:hover { color: var(--pink) !important; }';
+
+            // Append the CSS rule to the style element
+            style.appendChild(document.createTextNode(cssRule));
+
+            // Append the style element to the document head
+            document.head.appendChild(style);
+        });
+
+        // Add a mouseout event listener to remove the added style on mouseout
+        navbar.addEventListener('mouseout', function () {
+            // Select the style element
+            const addedStyle = document.querySelector('.added-style');
+
+            // Remove the added style if it exists
+            if (addedStyle) {
+                addedStyle.remove();
+            }
+        });
+    }
+});

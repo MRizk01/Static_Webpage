@@ -106,9 +106,9 @@ header .logo{
 header .logo span{
   color:var(--pink);
 }
-header .navbar :hover{
+/* header .navbar :hover{
   color:var(--pink);
-}
+} */
 
  header .navbar {
   margin-left: 2rem;
@@ -158,9 +158,10 @@ header .navbar ul{
   background: rgba(0, 0, 0, 0.7);
 } */
 
-.navbar ul li:hover > ul {
-  display: flex; /* Show submenus on hover */
-}
+ .navbar ul li:hover > ul {
+  display: flex; 
+} 
+
 
 
 /* Style the third-level submenu */
@@ -394,8 +395,8 @@ header .navbar ul{
 .teacher .box .share a{
   height:4rem;
   width:4rem;
-  line-height: 4rem;
-  font-size: 2rem;
+  line-height: 9rem;
+  font-size: 1.5rem;
   background:var(--coffee);
   border-radius: .5rem;
   margin:.3rem;

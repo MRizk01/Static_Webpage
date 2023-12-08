@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-    <!-- Add your existing CSS links here -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +14,7 @@
     <header>
         <img src="images/logo.png" alt="E-Learning">
         <a href="#" class="logo">E-Learning</a>
-        <nav class="navbar">
+        <nav class="navbar" onmouseover="changeNavbarColorOnHover()">
             <ul>
                 <li><a href="home.html">home</a>
             <li>
@@ -44,27 +42,58 @@
                 <li><a href="price.html">price</a></li>
                 <li><a href="review.html">review</a></li>
                 <li><a href="contact.html">contact</a></li>
-                <li><a href="Login.html">Login</a></li>
-                <li><a href="Signup.html">Register</a></li>
+                <li><a href="Login.html" onclick="showLogin(event)">Login</a></li>
+                <li><a href="Signup.html" onclick="showSignUp(event)">Register</a></li>
             </ul>
         </nav>
 
     </header>
 
-    <section class="login">
+    <section class="login" >
         <h1 class="heading">Login</h1>
-        <!-- Your login form goes here -->
         <form>
-            <!-- Add your form fields here (e.g., username, password) -->
             <label for="username" id="User">Username:</label>
             <input type="text" id="username" name="username" required>
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-
+            
             <button type="submit" class="btn">Login</button>
+            <p>Don't have an account ?</p> 
+            <button type="button" class="btn" onclick="showSignUp()">Create New account</button>
+
+            
         </form>
     </section>
+
+    <!--  -->
+    <!--  -->
+    <section class="signup">
+        <h1 class="heading">Sign Up</h1>
+        <!-- Your sign-up form goes here -->
+        <form>
+            <!-- Add your form fields here (e.g., username, email, password) -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="btn">Sign Up</button>
+            <p>Already a user ?</p> 
+            <button type="button" class="btn" onclick="showLogin()">Login</button>
+
+
+        </form>
+    </section>
+    <!--  -->
+    <!--  -->
+
+    <form>
+    </form>
+
 
 <!-- footer section  -->
 <section>
@@ -77,15 +106,6 @@
                 <p>We are committed to providing cutting-edge, personalized education led by industry experts. With a focus on excellence and innovation, we aim to redefine your learning experience and empower you to reach new heights</p>
             </div>
     
-            <!-- <div class="box">
-                <h3>quick links</h3>
-                <a href="#">home</a>
-                <a href="#">course</a>
-                <a href="#">teacher</a>
-                <a href="#">price</a>
-                <a href="#">review</a>
-                <a href="#">contact</a>
-            </div> -->
     
             <div class="box">
                 <h3>follow us</h3>

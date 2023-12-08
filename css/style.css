@@ -106,9 +106,7 @@ header .logo{
 header .logo span{
   color:var(--pink);
 }
-/* header .navbar :hover{
-  color:var(--pink);
-} */
+
 
  header .navbar {
   margin-left: 2rem;
@@ -119,14 +117,11 @@ header .logo span{
 
 
 header .navbar ul{
-  /* all: unset; */
   list-style: none;
   display: flex;
-  /* flex-wrap: wrap; */
     
   margin-left: 2rem;
   font-size: 2rem;
-  /* color:var(--white); */
 }
 .navbar ul li {
   position: relative;
@@ -135,7 +130,6 @@ header .navbar ul{
   display: block;
   padding: 10px;
 }
-/* Style the submenus */
 .navbar ul li ul {
   position: absolute;
   display: none;
@@ -154,9 +148,7 @@ header .navbar ul{
   color: #fff;
   cursor: pointer;
 }
-/* .navbar ul a:hover {
-  background: rgba(0, 0, 0, 0.7);
-} */
+
 
  .navbar ul li:hover > ul {
   display: flex; 
@@ -172,19 +164,6 @@ header .navbar ul{
 
 
 
-/**//**/
-
-
-
-/* #menu{
-  font-size: 2.5rem;
-  padding:.5rem 1rem;
-  border-radius: .3rem;
-  color: var(--coffee);
-  border:.1rem solid var(--white);
-  cursor: pointer;
-  display: none;
-} */
 
 
 
@@ -303,8 +282,7 @@ header .navbar ul{
   margin: 0 auto;
 }
 
-.signup label,
-.login label {
+.signup label,.signup p, .login label,.login p {
   display: block;
   margin-top: 10px;
   font-size: 1.8rem;
@@ -621,7 +599,6 @@ footer .credit span{
 
 
 
-/* media queries  */
 
 @media (max-width:991px){
 
@@ -690,7 +667,6 @@ footer .credit span{
 
 } 
 
-/*new*/
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -733,7 +709,9 @@ footer .credit span{
   background-color: var(--secondary-color);
 }
 
-
+.signup {
+  display: none;
+}
 
 
 

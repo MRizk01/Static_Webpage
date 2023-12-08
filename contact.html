@@ -19,7 +19,7 @@
     <header>
         <img src="images/logo.png" alt="E-Learning">
         <a href="#" class="logo">E-Learning</a>
-        <nav class="navbar">
+        <nav class="navbar" onmouseover="changeNavbarColorOnHover()">
             <ul>
                 <li><a href="home.html">home</a>
             <li>
@@ -47,8 +47,8 @@
                 <li><a href="price.html">price</a></li>
                 <li><a href="review.html">review</a></li>
                 <li><a href="contact.html">contact</a></li>
-                <li><a href="Login.html">Login</a></li>
-                <li><a href="Signup.html">Register</a></li>
+                <li><a href="Login.html" onclick="showLogin(event)">Login</a></li>
+                <li><a href="Login.html" onclick="showSignUp(event)">Register</a></li>
             </ul>
         </nav>
 
@@ -93,15 +93,6 @@
             <p>We are committed to providing cutting-edge, personalized education led by industry experts. With a focus on excellence and innovation, we aim to redefine your learning experience and empower you to reach new heights</p>
         </div>
 
-            <!-- <div class="box">
-                <h3>quick links</h3>
-                <a href="#">home</a>
-                <a href="#">course</a>
-                <a href="#">teacher</a>
-                <a href="#">price</a>
-                <a href="#">review</a>
-                <a href="#">contact</a>
-            </div> -->
 
             <div class="box">
                 <h3>follow us</h3>
